@@ -1,7 +1,8 @@
 # Bostadsbevakning
 
 Statisk sajt som visar bostadsrätter till salu och snart till salu i bevakade
-bostadsrättsföreningar i Hägerstensåsen och Telefonplan. Hostas på GitHub Pages.
+bostadsrättsföreningar i Hägerstensåsen, Midsommarkransen och Telefonplan. Hostas
+på GitHub Pages.
 Allt innehåll och all text på sajten är på svenska.
 
 ## Filer
@@ -43,6 +44,12 @@ Datan kommer från föreningssidorna `https://www.booli.se/bostadsrattsforening/
   om det som ändrats, uppdatera `avlast` och lägg till en rad överst i `andringar`
   för varje annons som tillkommit, försvunnit, bytt status eller ändrat pris.
 - Försök aldrig ta dig förbi botskydd eller CAPTCHA på Booli.
+
+Området Midsommarkransen är Boolis stadsdel med samma namn
+(`https://www.booli.se/sok/till-salu?areaIds=874697`), utom de föreningar som
+redan ligger under Telefonplan. Registret där innehåller bara föreningar som hade
+en annons när området lades till. Nya föreningar hittas genom att öppna annonserna
+i sökningen och följa länken till föreningen.
 
 Det finns även ett privat Google-kalkylark, "Bostadsrättsföreningar – register",
 med samma data plus anteckningar och källor. Sajten läser inte arket. Fråga

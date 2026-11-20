@@ -1,7 +1,7 @@
 # Bostadsbevakning
 
 En statisk sajt som visar bostadsrätter till salu och snart till salu i bevakade
-bostadsrättsföreningar i Hägerstensåsen och Telefonplan.
+bostadsrättsföreningar i Hägerstensåsen, Midsommarkransen och Telefonplan.
 
 ## Öppna sajten
 

@@ -139,53 +139,192 @@ Brf The Brick Terra|Telefonplan|Responsgatan 14|Snart till salu|1|34|7|2663||3 �
 Brf Torghusen|Telefonplan|Huvudfabriksgatan 4|Snart till salu|3|79|3|6167||1 månad||annons/6287698|2026-11-20
 HSB Brf Tvålflingan i Stockholm|Telefonplan|Tellusborgsvägen 108|Snart till salu|4,5|87|1|||9 år||annons/3026445|2026-11-20
 Brf Bokbindarvägen 78|Hägerstensåsen|Bokbindarvägen 78|Snart till salu|2|50|4|5106||Inkommet idag||bostad/336076|2026-11-20
+Brf Bäckvägen 46-52|Midsommarkransen|Bäckvägen 50|Till salu|3|77|1|5249|5795000|4 dagar|Visning sön 22 nov kl 12:15.|bostad/417149|2026-11-20
+Brf Papperskniven|Midsommarkransen|Fastlagsvägen 23|Till salu|2|49|2|4900|3195000|16 dagar|Budgivning pågår.|bostad/571491|2026-11-20
+Brf Reservoarpennan 5|Midsommarkransen|Fastlagsvägen 63|Snart till salu|2|54|2|||1 år||bostad/571359|2026-11-20
+Brf Hundrovan 3|Midsommarkransen|Valsbergs gränd 5|Snart till salu|2|44|1|3371||2 månader||annons/6269735|2026-11-20
+Brf Månhästen|Midsommarkransen|Fastlagsvägen 42|Snart till salu|1,5|45|1|2834||6 månader||bostad/571443|2026-11-20
+Brf Midsommarblomman|Midsommarkransen|Midsommargränd 5|Snart till salu|2,5|48|3|2266||15 dagar||bostad/674018|2026-11-20
+Brf Midsommarblomman|Midsommarkransen|Midsommargränd 9|Snart till salu|2|44||2087||1 månad||bostad/674023|2026-11-20
+Brf Violen nr 14|Midsommarkransen|Nioörtsvägen 40|Snart till salu|1,5|40|4|3525|2495000|1 månad|Visning sön 22 nov kl 12:20.|bostad/682885|2026-11-20
+Brf Korpen|Midsommarkransen|Mellanbergsvägen 19|Snart till salu|3|51||4467||12 dagar||bostad/129394|2026-11-20
+Brf Korpen|Midsommarkransen|Hökmossevägen 64|Snart till salu|2|39|1|3416||1 månad||bostad/129340|2026-11-20
+Brf Korpen|Midsommarkransen|Hökmossevägen 62|Snart till salu|2|51|3|4467||1 månad||annons/6285969|2026-11-20
+Brf Midsommarbuketten|Midsommarkransen|Tellusborgsvägen 65C|Till salu|2|60|1|4209|4495000|11 dagar|Visning sön 22 nov kl 14:20.|annons/6282306|2026-11-20
+Brf Midsommarbuketten|Midsommarkransen|Tellusborgsvägen 65C|Till salu|2|38|1|3028|2995000|1 månad|Visning sön 22 nov kl 13:45.|bostad/673988|2026-11-20
+Brf Midsommarbuketten|Midsommarkransen|Midsommargränd 6|Snart till salu|3|61|2|||1 månad||annons/6302734|2026-11-20
+Brf Krassen|Midsommarkransen|Tellusborgsvägen 33|Till salu|3|65|4|4574|4395000|10 dagar|Visning sön 22 nov kl 13:30.|bostad/667044|2026-11-20
+Brf Violen i Midsommarkransen|Midsommarkransen|Midsommarparken 5A|Snart till salu|2|68|4|3824||5 månader||annons/6174084|2026-11-20
+Svenska Folkbyggen Brf Nr 6|Midsommarkransen|Kyndelsmässogränd 7|Till salu|3|57|3|3724||2 dagar|Visning sön 22 nov kl 12:15.|bostad/649926|2026-11-20
+Brf Bläckpennan|Midsommarkransen|Nyårsvägen 20|Snart till salu|3|81|2|5535||1 månad||bostad/689227|2026-11-20
+Brf Bläckpennan|Midsommarkransen|Nyårsvägen 10|Snart till salu|4|86|3|5671||1 månad||annons/6269726|2026-11-20
+Brf Bläckpennan|Midsommarkransen|Nyårsvägen 10|Snart till salu|3|74|0,5|5056||7 månader||annons/6063778|2026-11-20
+Brf Vildrosen|Midsommarkransen|Nioörtsvägen 28A|Till salu|2|62,5|4|4954||3 dagar|Visning mån 23 nov kl 17:45.|annons/6345917|2026-11-20
+Brf Vildrosen|Midsommarkransen|Nioörtsvägen 28B|Snart till salu|3|76,8|4|6097||1 månad||bostad/4381687|2026-11-20
+Brf Vildrosen|Midsommarkransen|Nioörtsvägen 28B|Snart till salu|3|76,8|2|6097||2 månader||bostad/4374072|2026-11-20
+Brf Dvärgbjörken 12 I Hägersten|Midsommarkransen|Tellusborgsvägen 50|Snart till salu|2|50|2|3875||2 dagar||bostad/692489|2026-11-20
+Brf Dvärgbjörken 12 I Hägersten|Midsommarkransen|Oktobergatan 8|Till salu|2|41||3020|2750000|18 dagar||annons/6096106|2026-11-20
+Brf Dvärgbjörken 12 I Hägersten|Midsommarkransen|Oktobergatan 12|Snart till salu|2|41|2|3178||2 månader||bostad/692471|2026-11-20
+Brf Dvärgbjörken 12 I Hägersten|Midsommarkransen|Tellusborgsvägen 50|Snart till salu|2|50|1|3122||5 månader||annons/6145717|2026-11-20
+Brf Maskrosen 3 i Midsommarkransen|Midsommarkransen|Svandammsvägen 23|Till salu|1|38|-1|2571|2695000|16 dagar||bostad/4012558|2026-11-20
+Brf Maskrosen 3 i Midsommarkransen|Midsommarkransen|Svandammsvägen 21A|Till salu|1|25|3|1806|2195000|21 dagar|Visning sön 22 nov.|bostad/4012553|2026-11-20
+Brf Maskrosen 3 i Midsommarkransen|Midsommarkransen|Svandammsvägen 21A|Snart till salu|2|39|2|2638|2795000|9 månader||annons/5991839|2026-11-20
+Brf Midsommarparken|Midsommarkransen|Svandammsvägen 17A|Snart till salu|1,5|42|-1|3510||6 dagar||bostad/399494|2026-11-20
+Brf Åkervindan|Midsommarkransen|Vattenledningsvägen 47|Snart till salu|1|35|3|4303|2195000|7 månader||bostad/784511|2026-11-20
+Brf Blomsteräng|Midsommarkransen|Radiusbacken 6|Snart till salu|2|52|4|4184||8 månader||bostad/704316|2026-11-20
+Riksbyggen Brf Stockholmshus nr 7|Midsommarkransen|Tångvägen 21|Till salu|2|44,5|3|3852|2195000|3 dagar|Visning sön 22 nov kl 14:45.|bostad/129523|2026-11-20
+Riksbyggen Brf Stockholmshus nr 7|Midsommarkransen|Hökmossevägen 7|Snart till salu|2|42,5|1|3492||2 månader||bostad/129285|2026-11-20
+Brf Mälarglimt|Midsommarkransen|Bäckvägen 92A|Snart till salu|2|52|-1|3566|2495000|27 dagar||bostad/418370|2026-11-20
+Brf Mälarglimt|Midsommarkransen|Bäckvägen 92B|Snart till salu|2|40|1|2743||1 månad|Visning tis 24 nov.|bostad/418364|2026-11-20
+Brf Blåklockan i Midsommarkransen|Midsommarkransen|Johannesbergsgatan 3|Till salu|1|28|2|2581|1995000|17 dagar|Budgivning pågår.|bostad/142238|2026-11-20
+Brf Blåklockan i Midsommarkransen|Midsommarkransen|Johannesbergsgatan 3|Snart till salu|2|36|2|3328||17 dagar||bostad/142235|2026-11-20
+Brf Blåklockan i Midsommarkransen|Midsommarkransen|Johannesbergsgatan 3|Snart till salu|1,5|36|3|3483||26 dagar||bostad/142230|2026-11-20
+Brf Blåklockan i Midsommarkransen|Midsommarkransen|Johannesbergsgatan 3|Snart till salu|2|39||3608|1995000|3 månader||annons/6178005|2026-11-20
+Brf Blåklockan i Midsommarkransen|Midsommarkransen|Johannesbergsgatan 3|Snart till salu|1|28|1|2151||4 år||bostad/142243|2026-11-20
+Brf Konvolv|Midsommarkransen|Vattenledningsvägen 45|Snart till salu|1,5|38|1|3524||2 månader||bostad/784488|2026-11-20
+Brf Vattenledningsvägen 51|Midsommarkransen|Vattenledningsvägen 51|Snart till salu|2|35|1,5|4099|2795000|1 månad|Visning sön 29 nov kl 12:00.|bostad/784544|2026-11-20
+Brf Svenska Folkbyggen nr 3|Midsommarkransen|Kyndelsmässogränd 12|Till salu|3|54,5|3|5309|3995000|7 dagar|Visning sön 22 nov kl 14:30.|bostad/649882|2026-11-20
+Brf Svenska Folkbyggen nr 3|Midsommarkransen|Kyndelsmässogränd 14|Snart till salu|3|54,5|3|5309||9 dagar|Visning sön 22 nov kl 14:00.|annons/6344953|2026-11-20
+Brf Svenska Folkbyggen nr 3|Midsommarkransen|Kyndelsmässogränd 12|Snart till salu|2|54,5|2|5309|3995000|17 dagar||bostad/649880|2026-11-20
+Brf Svenska Folkbyggen nr 3|Midsommarkransen|Kyndelsmässogränd 13|Snart till salu|2|42|1|4093||3 månader||bostad/649863|2026-11-20
+Brf Krassen Nr 5|Midsommarkransen|Lötmogatan 7|Snart till salu|2|36|1|4111||Inkommet igår||bostad/2155526|2026-11-20
+Brf Idegranen 6|Midsommarkransen|Majstångsvägen 11|Snart till salu|2|40|1|||1 månad||bostad/668418|2026-11-20
+Brf Radiusfabriken|Midsommarkransen|Radiusbacken 23|Till salu|3|73|1|5569|6495000|Inkommet idag|Visning tor 26 nov kl 17:00.|annons/6266379|2026-11-20
+Brf Radiusfabriken|Midsommarkransen|Radiusbacken 21|Snart till salu|2|58|4|3661||15 dagar||annons/6337621|2026-11-20
+Brf Enen 25|Midsommarkransen|Tellusborgsvägen 66|Snart till salu|2|45|2|3318||Inkommet igår||annons/6354541|2026-11-20
+Brf Grillstugan|Midsommarkransen|Vattenledningsvägen 49|Snart till salu|1|32|1|2664||2 månader||bostad/784528|2026-11-20
+Brf Hundrovan 5|Midsommarkransen|Johannesbergsgatan 4A|Till salu|2|32||3558|2495000|14 dagar|Budgivning pågår.|annons/6340565|2026-11-20
+Brf Hundrovan 5|Midsommarkransen|Johannesbergsgatan 4|Snart till salu|1|30|2|3224||1 månad||bostad/142221|2026-11-20
+Brf Raderkniven 2 i Stockholm|Midsommarkransen|Fastlagsvägen 74|Snart till salu|1|26||1964|1995000|5 år||annons/4211172|2026-11-20
+Brf Nässlan 5|Midsommarkransen|Tegelbruksvägen 12|Snart till salu|3|66|0,5|4533|5195000|5 månader||bostad/764009|2026-11-20
+Brf Tångspiken|Midsommarkransen|Tångvägen 46|Till salu|3|56|2|5288|2995000|1 månad|Visning sön 22 nov kl 12:30.|bostad/800616|2026-11-20
+Brf Tångspiken|Midsommarkransen|Spikvägen 49|Snart till salu|2|41|1|||1 år||bostad/800600|2026-11-20
+Brf Tångspiken|Midsommarkransen|Spikvägen 53|Snart till salu|2|41|2|4261||2 år||bostad/800605|2026-11-20
+Brf Vildrosen Nr 9|Midsommarkransen|Svandammsvägen 3|Snart till salu|1,5|35,5|2|2724||22 dagar||bostad/4010386|2026-11-20
+Brf Penseldraget|Midsommarkransen|Valborgsmässovägen 16|Till salu|3|66|5|4586|4995000|9 dagar|Budgivning pågår.|bostad/782084|2026-11-20
+Brf Papperskniven 4|Midsommarkransen|Bäckvägen 42|Snart till salu|3|61|1|5630||8 månader||bostad/417187|2026-11-20
+Brf Hoppet 42|Midsommarkransen|Hökmossevägen 36A|Till salu|1|26|1|2314|1745000|3 månader||bostad/129440|2026-11-20
+Brf Spolen 4|Midsommarkransen|Mejselvägen 48|Snart till salu|4|96||5984||5 månader||bostad/672698|2026-11-20
+Brf Aprilgatan 12|Midsommarkransen|Aprilgatan 12C|Snart till salu|4|88|1|4686||24 dagar||annons/6326247|2026-11-20
+Brf Antennen 2|Midsommarkransen|Tångvägen 42|Till salu|3|58|1|5397|2595000|1 månad|Visning sön 22 nov kl 11:00.|bostad/778024|2026-11-20
+Brf Tellusborg|Midsommarkransen|Aprilgatan 2C|Till salu|6|131|2|9275|12500000|21 dagar||annons/6302729|2026-11-20
+Brf Tellusborg|Midsommarkransen|Majstångsvägen 3|Snart till salu|4|97|2|6565||10 månader||annons/5986510|2026-11-20
+Brf Tellusborg|Midsommarkransen|Ringdansvägen 1F|Snart till salu|3|74|3|4547||2 år||annons/5442228|2026-11-20
+Brf Kåpan 2|Midsommarkransen|Filvägen 8|Snart till salu|2|54|2|5764|2795000|1 månad|Budgivning pågår.|bostad/573580|2026-11-20
+Brf Kåpan 2|Midsommarkransen|Filvägen 8|Snart till salu|3|54|1|4366||4 år||bostad/573582|2026-11-20
+Brf Kåpan 2|Midsommarkransen|Filvägen 8|Snart till salu|2|52|2|4206||4 år||bostad/573581|2026-11-20
+Brf Svenska Folkbyggen nr 2|Midsommarkransen|Hökmossevägen 23|Snart till salu|2|44|1|4263||2 månader||bostad/4369313|2026-11-20
+Brf Spolen i Hägersten|Midsommarkransen|Mejselvägen 44|Till salu|1|26|-1|2498|1500000|1 månad|Visning sön 22 nov.|annons/6314699|2026-11-20
+Brf Rullen 1|Midsommarkransen|Mejselvägen 39|Snart till salu|1|32|3|3193|2295000|3 månader||bostad/672679|2026-11-20
+Brf Martallen|Midsommarkransen|Svandammsvägen 37|Snart till salu|2|47|2|3541|3995000|1 månad||bostad/3994519|2026-11-20
+Brf ApartHotel Attaché|Midsommarkransen|Cedergrensvägen 16|Till salu|2|28,5|4|5062|1550000|7 dagar|Budgivning pågår.|annons/5703151|2026-11-20
+Brf ApartHotel Attaché|Midsommarkransen|Cedergrensvägen 16|Till salu|1|16|1|2842|1100000|28 dagar||annons/6322237|2026-11-20
+Brf ApartHotel Attaché|Midsommarkransen|Cedergrensvägen 16|Till salu|1|40|4|5683|2150000|1 månad||annons/6306950|2026-11-20
+Brf ApartHotel Attaché|Midsommarkransen|Cedergrensvägen 16|Snart till salu|2|26|4|4618|1695000|3 månader||annons/5262478|2026-11-20
+Brf ApartHotel Attaché|Midsommarkransen|Cedergrensvägen 16|Till salu|1|17||2415|1095000|1 år||annons/5727099|2026-11-20
+Brf ApartHotel Attaché|Midsommarkransen|Cedergrensvägen 16|Snart till salu|1|18|1|3197|1090000|2 år||annons/5538250|2026-11-20
+Brf ApartHotel Attaché|Midsommarkransen|Cedergrensvägen 16|Till salu|1|16||1817|1250000|4 år||annons/4578369|2026-11-20
+Brf Midsommarkransens Martall 37|Midsommarkransen|Svandammsvägen 31A|Snart till salu|1|44|1|4233||1 månad||bostad/4012572|2026-11-20
+Brf Kransbindaren|Midsommarkransen|Kransbindarvägen 22|Till salu|2|33|1|3623|2195000|24 dagar|Visning sön 22 nov kl 11:00.|bostad/641285|2026-11-20
+Brf Martallen 2526|Midsommarkransen|Midsommarvägen 80|Till salu|3|78|1|6357||7 dagar|Visning idag.|bostad/4309375|2026-11-20
+Brf Tellus 53|Midsommarkransen|Vattenledningsvägen 53|Snart till salu|1|18|-1|1646||2 månader||bostad/4506147|2026-11-20
+HSB Brf Dialogen|Midsommarkransen|Tellusgatan 4C|Snart till salu|2|46||4415||2 år||bostad/4394831|2026-11-20
+Brf Boston|Midsommarkransen|Tellusborgsvägen 42|Till salu|4|107|4|7009|8495000|3 dagar|Visning sön 22 nov kl 14:00.|bostad/4511573|2026-11-20
+Brf Boston|Midsommarkransen|Tellusborgsvägen 40|Till salu|2|51|3|4179|4295000|2 månader||bostad/4512431|2026-11-20
+Brf Boston|Midsommarkransen|Tellusborgsvägen 40|Snart till salu|4|93|3|6399||2 månader||bostad/4515239|2026-11-20
+Brf The Brick Rubigo|Midsommarkransen|Diavoxvägen 32|Snart till salu|1|26|8|2330||1 månad||bostad/4540557|2026-11-20
+Brf The Brick Rubigo|Midsommarkransen|Diavoxvägen 32|Till salu|1|32|4|2868|2495000|8 månader||bostad/4540535|2026-11-20
+Brf The Brick Rubigo|Midsommarkransen|Diavoxvägen 32|Till salu|2|34|2|3047|2395000|9 månader|Visning sön 22 nov kl 14:40.|bostad/4540518|2026-11-20
+Brf The Brick Rubigo|Midsommarkransen|Diavoxvägen 32|Till salu|2|34|3|3047|2625000|10 månader||bostad/4540519|2026-11-20
+Brf Konvolvulus 9|Midsommarkransen|Vattenledningsvägen 39|Till salu|2|30|1|2164|2650000|1 månad||annons/6305737|2026-11-20
+Brf Blyertspennan 4|Midsommarkransen|Nyårsvägen 15|Till salu|3|53|1|3531|2795000|7 dagar|Visning sön 22 nov kl 13:45.|bostad/4580473|2026-11-20
 `,
 
   foreningar: `
 Brf Aktien 3|Hägerstensåsen|38|1945|2000|53910|Tomträtt
+Brf Antennen 2|Midsommarkransen|12|1944||266755|Tomträtt
+Brf ApartHotel Attaché|Midsommarkransen|91|||275423|Tomträtt
+Brf Aprilgatan 12|Midsommarkransen|20|1911||266732|Äger marken
 Brf Arvodet 2|Hägerstensåsen|30|1944|2007|75960|Äger marken
 Brf Arvodet-Kvittensen|Hägerstensåsen|48|1946|2001|80612|Äger marken
 Brf Assuransen Hägersten|Hägerstensåsen|||2003||
 Brf Avgiften 1|Hägerstensåsen|23||1984||
 Brf Bergsparken|Hägerstensåsen|86||2004|55196|Tomträtt
+Brf Blomsteräng|Midsommarkransen|47|2011||78744|Äger marken
+Brf Blyertspennan 4|Midsommarkransen||||298929|
+Brf Blåklockan i Midsommarkransen|Midsommarkransen|27|1938||79031|Äger marken
+Brf Bläckpennan|Midsommarkransen|41|1947||57438|Tomträtt
 Brf Bokbindaren|Hägerstensåsen|26||2005||
 Brf Bokbindarvägen 72|Hägerstensåsen|||2003||
 Brf Bokbindarvägen 76|Hägerstensåsen|||2006||
 Brf Bokbindarvägen 78|Hägerstensåsen|36|1944|2008|81222|Äger marken
+Brf Boston|Midsommarkransen|47|||286098|Äger marken
+Brf Bäckvägen 46-52|Midsommarkransen|38|||47438|Tomträtt
 Brf Dagtraktamentet nr 3 och 4|Hägerstensåsen|36||1980|54273|Äger marken
+Brf Dvärgbjörken 12 I Hägersten|Midsommarkransen|30|||68273|Tomträtt
 Brf Dörrar på glänt|Hägerstensåsen|||2005||
+Brf Enen 25|Midsommarkransen|34|1939||81017|Äger marken
 Brf Flygplansfabriken|Telefonplan|73|2015|2007|78743|Äger marken
 Brf Förskottet 4|Hägerstensåsen|36||2004|268656|Äger marken
+Brf Grillstugan|Midsommarkransen|10|1934||81075|Äger marken
 Brf Gåvoskatten 3 o 4|Hägerstensåsen|30||1978|49815|Äger marken
 Brf Handpenningen|Hägerstensåsen|40|1947|2004|260500|Äger marken
 Brf Handpressen 6|Hägerstensåsen|4||2006||
+Brf Hoppet 42|Midsommarkransen|32|1944||234216|Tomträtt
+Brf Hundrovan 3|Midsommarkransen|126|1943||49567|Tomträtt
+Brf Hundrovan 5|Midsommarkransen|13|1936||82016|Äger marken
 Brf Hypoteket|Hägerstensåsen|||2004||
 Brf Hägerstenshöjden|Hägerstensåsen|65|1952|1996|51780|Äger marken
 Brf Högst på Åsen|Hägerstensåsen|26|1947|2001||
+Brf Idegranen 6|Midsommarkransen|13|||80346|Äger marken
 Brf Insteget|Telefonplan|255|1972|2007|46316|Äger marken
 Brf Intecknaren|Hägerstensåsen|20||2011||
 Brf Kobran Telefonplan|Telefonplan|55|2012|2010|78809|Äger marken
 Brf Kofferten|Hägerstensåsen|67|1948|2004|53270|Äger marken
+Brf Konvolv|Midsommarkransen|12|||79485|Äger marken
+Brf Konvolvulus 9|Midsommarkransen||||298755|
+Brf Korpen|Midsommarkransen|114|||52187|Äger marken
+Brf Kransbindaren|Midsommarkransen|47|||277086|Äger marken
+Brf Krassen|Midsommarkransen|41|1992||53743|Tomträtt
+Brf Krassen Nr 5|Midsommarkransen|30|2010||80171|Äger marken
 Brf Kronan i Stockholm|Hägerstensåsen|83||1989|83193|Tomträtt
 Brf Kubisten|Telefonplan|62||2011|76371|Äger marken
 Brf Kvittensen 3|Hägerstensåsen|18||1983||
+Brf Kåpan 2|Midsommarkransen|12|1944||267567|Tomträtt
 Brf Köpeskillingen 2|Hägerstensåsen|||2012||
 Brf Lineotypen 9|Hägerstensåsen|||2005||
 Brf Lotteriet|Hägerstensåsen|18||2004||
 Brf Lotteriet 12|Hägerstensåsen|||2008||
 Brf Lotteriet 3|Hägerstensåsen|18||2004||
 Brf Lotterivägen 19-37|Hägerstensåsen|59|1947|2004|63674|Äger marken
+Brf Martallen|Midsommarkransen|61|1929||274735|Äger marken
+Brf Martallen 2526|Midsommarkransen|29|1943||280356|Tomträtt
+Brf Maskrosen 3 i Midsommarkransen|Midsommarkransen|42|1939||76365|Äger marken
 Brf Metronomen|Telefonplan|188||2015|79880|Äger marken
+Brf Midsommarblomman|Midsommarkransen|54|2007||51539|Äger marken
+Brf Midsommarbuketten|Midsommarkransen|112|2009||53552|Äger marken
+Brf Midsommarkransens Martall 37|Midsommarkransen|17|1939||276171|Äger marken
+Brf Midsommarparken|Midsommarkransen|43|1938||78277|Äger marken
 Brf Motvind|Hägerstensåsen|25|1944|2000||
+Brf Månhästen|Midsommarkransen|94|1993||49688|Tomträtt
 Brf Mäklaren 1|Hägerstensåsen|21|1945|2008||
 Brf Mäklaren 7|Hägerstensåsen|||2012||
+Brf Mälarglimt|Midsommarkransen|20|1942||78873|Tomträtt
 Brf Nattläxan|Hägerstensåsen|20|1986|2004||
+Brf Nässlan 5|Midsommarkransen|14|2000||82380|Äger marken
 Brf Obligationen 4|Hägerstensåsen|30|1945|2005|79288|Tomträtt
 Brf Obligationen 5|Hägerstensåsen|30||2005|48338|Tomträtt
 Brf Obligationen 7|Hägerstensåsen|||1990||
+Brf Papperskniven|Midsommarkransen|24|1944||49244|Tomträtt
+Brf Papperskniven 4|Midsommarkransen|19|||221841|Tomträtt
+Brf Penseldraget|Midsommarkransen|14|2008||161974|Tomträtt
 Brf Plommonträdet 5|Telefonplan|84|2018|2016|274599|Tomträtt
+Brf Raderkniven 2 i Stockholm|Midsommarkransen|14|1942||82315|Tomträtt
 Brf Radiosändaren|Telefonplan|68|1944|1943|45569|Tomträtt
+Brf Radiusfabriken|Midsommarkransen|50|||80943|Äger marken
+Brf Reservoarpennan 5|Midsommarkransen|19|1943||49552|Tomträtt
 Brf Rosenhöjden|Hägerstensåsen|35|2000|1999|57588|Äger marken
+Brf Rullen 1|Midsommarkransen|12|1944||273947|Tomträtt
 Brf Räkningen 1|Hägerstensåsen|25|1947|1987||
 Brf Räkningen 2|Hägerstensåsen|18||1987||
 Brf Sedelpressen|Hägerstensåsen|24|2014|2010||
@@ -197,13 +336,20 @@ Brf Skorstenen|Hägerstensåsen|36|1946|2004|54107|Äger marken
 Brf Smältrullen|Telefonplan|75||2008|56058|Äger marken
 Brf Sparbanksboken 5|Hägerstensåsen|||2005||
 Brf Sparboken 4|Hägerstensåsen|31|1946|2007|46225|Tomträtt
+Brf Spolen 4|Midsommarkransen|22|2007||245457|Tomträtt
+Brf Spolen i Hägersten|Midsommarkransen|45|1980||271716|Tomträtt
 Brf Stora Arvodet 22|Hägerstensåsen|||2012||
+Brf Svenska Folkbyggen nr 2|Midsommarkransen|36|1944||268345|Tomträtt
+Brf Svenska Folkbyggen nr 3|Midsommarkransen|59|||80162|Tomträtt
 Brf Tegelmonoliten|Telefonplan|107|2015|2012|74035|Äger marken
 Brf Tegelpannan|Hägerstensåsen|||2005||
 Brf Tele|Telefonplan|516|1940|1940|46028|Tomträtt
 Brf Telefoncentralen|Telefonplan|157|2022||282309|Äger marken
+Brf Tellus 53|Midsommarkransen|16|||283569|Äger marken
+Brf Tellusborg|Midsommarkransen|218|1945||267424|Äger marken
 Brf Tellusborgshus|Telefonplan|350|1939|1938|44291|Tomträtt
 Brf The Brick Lignum|Telefonplan|204|2023|2016|286593|Äger marken
+Brf The Brick Rubigo|Midsommarkransen||||286975|
 Brf The Brick Terra|Telefonplan|346|1974|2013|278354|Äger marken
 Brf Torghusen|Telefonplan|113|2009|2007|43407|Äger marken
 Brf Tryckarket 4|Hägerstensåsen|55|1944|2000|76865|Äger marken
@@ -215,15 +361,26 @@ Brf Trycksvärtan|Hägerstensåsen|24|2006|2005||
 Brf Trycksvärtan 2|Hägerstensåsen|11|1946|2004||
 Brf Trycksvärtan 7|Hägerstensåsen|15||2003||
 Brf Trädkronan|Hägerstensåsen|51||2006|267262|Tomträtt
+Brf Tångspiken|Midsommarkransen|34|1944||83073|Tomträtt
+Brf Vattenledningsvägen 51|Midsommarkransen|12|||79713|Äger marken
+Brf Vildrosen|Midsommarkransen|31|1973||57659|Äger marken
+Brf Vildrosen Nr 9|Midsommarkransen|24|||83669|Äger marken
+Brf Violen i Midsommarkransen|Midsommarkransen|69|1939||55726|Äger marken
+Brf Violen nr 14|Midsommarkransen|34|1983||51749|Äger marken
 Brf Värnskatten 5|Hägerstensåsen|32|1946|2001|78046|Äger marken
+Brf Åkervindan|Midsommarkransen|15|2005||78665|Äger marken
 Brf Åsens oas|Hägerstensåsen|24|1945|2004||
 Brf Ängsblomman|Telefonplan|53|2011|2007|49926|Äger marken
 Brf Ängsgräset|Telefonplan|54|2010|2007|52693|Äger marken
+HSB Brf Dialogen|Midsommarkransen|37|2023||284868|Äger marken
 HSB Brf Tvålflingan i Stockholm|Telefonplan|167|2008|2005|55027|Äger marken
 HSB Brf Växeln|Telefonplan|217|2024|2017|286779|Äger marken
+Riksbyggen Brf Stockholmshus nr 7|Midsommarkransen|106|1944||78870|Tomträtt
+Svenska Folkbyggen Brf Nr 6|Midsommarkransen|33|1946||55849|Tomträtt
 `,
 
   andringar: `
+2026-11-20|Midsommarkransen||Nytt område: 57 föreningar och 99 annonser tillagda.
 2026-11-20|Brf Tellusborgshus|Cedergrensvägen 59|Gick från snart till salu till till salu, utropspris 2 495 000 kr.
 2026-11-19|Brf Bokbindarvägen 78|Bokbindarvägen 78|Ny annons: 2 rum, 50 m², snart till salu.
 `
