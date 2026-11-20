@@ -78,6 +78,11 @@ input[type="number"] { width: 130px; }
 table { border-collapse: collapse; width: 100%; min-width: 860px; }
 th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
 th { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; font-weight: 600; white-space: nowrap; }
+th button { border: 0; background: transparent; padding: 0; margin: 0; cursor: pointer; color: inherit; font: inherit; text-transform: inherit; letter-spacing: inherit; white-space: nowrap; }
+th button:hover, th[aria-sort] button { color: var(--ink); }
+th button::after { content: "↕"; margin-left: 4px; opacity: .45; }
+th[aria-sort="ascending"] button::after { content: "↑"; opacity: 1; color: var(--accent); }
+th[aria-sort="descending"] button::after { content: "↓"; opacity: 1; color: var(--accent); }
 tr:last-child td { border-bottom: 0; }
 td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 td .sub { display: block; color: var(--muted); font-size: 12px; }
@@ -141,14 +146,16 @@ td .sub { display: block; color: var(--muted); font-size: 12px; }
       <label class="field"><span>Rum, minst</span><select id="fRooms"><option value="0">Alla</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></label>
       <label class="field"><span>Pris, högst (kr)</span><input type="number" id="fPrice" min="0" step="50000" placeholder="Ingen gräns"></label>
       <label class="field"><span>Sortera</span><select id="fSort">
-        <option value="rooms">Rum, flest först</option><option value="new">Nyast först</option>
-        <option value="priceAsc">Pris, lägst först</option><option value="feeAsc">Avgift, lägst först</option><option value="area">Boarea, störst först</option></select></label>
+        <option value="rooms:desc">Rum, flest först</option><option value="time:asc">Nyast först</option>
+        <option value="price:asc">Pris, lägst först</option><option value="price:desc">Pris, högst först</option>
+        <option value="fee:asc">Avgift, lägst först</option><option value="size:desc">Boarea, störst först</option>
+        <option value="addr:asc">Adress, A–Ö</option><option value="brf:asc">Förening, A–Ö</option></select></label>
       <label class="field check"><input type="checkbox" id="fFresh"><span>Dölj annonser äldre än 6 månader</span></label>
     </div>
     <p class="count" id="count"></p>
     <div class="tablebox">
       <table>
-        <thead><tr><th>Adress</th><th>Förening</th><th>Status</th><th class="num">Rum</th><th class="num">Boarea</th><th class="num">Våning</th><th class="num">Avgift</th><th class="num">Pris</th><th>På Booli</th></tr></thead>
+        <thead><tr id="objHead"><th data-k="addr">Adress</th><th data-k="brf">Förening</th><th data-k="status">Status</th><th class="num" data-k="rooms">Rum</th><th class="num" data-k="size">Boarea</th><th class="num" data-k="floor">Våning</th><th class="num" data-k="fee">Avgift</th><th class="num" data-k="price">Pris</th><th data-k="time">På Booli</th></tr></thead>
         <tbody id="rows"></tbody>
       </table>
       <div class="empty" id="rowsEmpty" hidden>Inga objekt matchar filtren.</div>
@@ -173,8 +180,11 @@ td .sub { display: block; color: var(--muted); font-size: 12px; }
 (function () {
   var $ = function (id) { return document.getElementById(id); };
   var D = window.BOSTADSDATA;
-  var filters = { area: "", status: "", rooms: 0, price: "", sort: "rooms", fresh: false };
+  var filters = { area: "", status: "", rooms: 0, price: "", sort: "rooms", dir: "desc", fresh: false };
   try { var saved = JSON.parse(localStorage.getItem("bb-filters") || "null"); if (saved) for (var k in filters) if (k in saved) filters[k] = saved[k]; } catch (e) {}
+  // Äldre sparade sorteringsval, från innan kolumnrubrikerna gick att klicka på.
+  var oldSort = { "new": ["time", "asc"], priceAsc: ["price", "asc"], feeAsc: ["fee", "asc"], area: ["size", "desc"] }[filters.sort];
+  if (oldSort) { filters.sort = oldSort[0]; filters.dir = oldSort[1]; }
   function saveFilters() { try { localStorage.setItem("bb-filters", JSON.stringify(filters)); } catch (e) {} }
 
   if (!D) { $("notice").textContent = "Datafilen data/data.js kunde inte läsas, så sidan har inget att visa."; $("notice").hidden = false; return; }
@@ -244,10 +254,33 @@ td .sub { display: block; color: var(--muted); font-size: 12px; }
       box.appendChild(b);
     });
     Array.prototype.forEach.call($("fStatus").children, function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-v") === filters.status)); });
-    $("fRooms").value = String(filters.rooms); $("fPrice").value = filters.price; $("fSort").value = filters.sort; $("fFresh").checked = !!filters.fresh;
+    $("fRooms").value = String(filters.rooms); $("fPrice").value = filters.price; $("fFresh").checked = !!filters.fresh;
+    $("fSort").value = filters.sort + ":" + filters.dir;
+    if ($("fSort").value !== filters.sort + ":" + filters.dir) $("fSort").selectedIndex = -1;
+    Array.prototype.forEach.call($("objHead").children, function (th) {
+      if (th.getAttribute("data-k") === filters.sort) th.setAttribute("aria-sort", filters.dir === "asc" ? "ascending" : "descending");
+      else th.removeAttribute("aria-sort");
+    });
+  }
+  // Värdet som en kolumn sorteras på. null betyder okänt och hamnar alltid sist.
+  var sortKeys = {
+    addr: function (o) { return o.addr || null; },
+    brf: function (o) { return o.brf || null; },
+    status: function (o) { return o.status || null; },
+    rooms: function (o) { return o.rooms; },
+    size: function (o) { return o.size; },
+    floor: function (o) { return o.floor === "BV" ? 0 : num(o.floor); },
+    fee: function (o) { return o.fee; },
+    price: function (o) { return o.price; },
+    time: function (o) { return ageDays(o.time); }
+  };
+  function setSort(key) {
+    if (filters.sort === key) filters.dir = filters.dir === "asc" ? "desc" : "asc";
+    else { filters.sort = key; filters.dir = key === "rooms" || key === "size" ? "desc" : "asc"; }
+    saveFilters(); render();
   }
   function renderObjekt() {
-    var max = num(filters.price), big = Number.MAX_VALUE;
+    var max = num(filters.price);
     var list = objekt.filter(function (o) {
       if (filters.area && o.area !== filters.area) return false;
       if (filters.status && o.status !== filters.status) return false;
@@ -256,14 +289,12 @@ td .sub { display: block; color: var(--muted); font-size: 12px; }
       if (filters.fresh) { var d = ageDays(o.time); if (d !== null && d > 183) return false; }
       return true;
     });
-    var sorters = {
-      rooms: function (a, b) { return (b.rooms || 0) - (a.rooms || 0) || (b.size || 0) - (a.size || 0); },
-      new: function (a, b) { var x = ageDays(a.time), y = ageDays(b.time); return (x === null ? big : x) - (y === null ? big : y); },
-      priceAsc: function (a, b) { return (a.price === null ? big : a.price) - (b.price === null ? big : b.price); },
-      feeAsc: function (a, b) { return (a.fee === null ? big : a.fee) - (b.fee === null ? big : b.fee); },
-      area: function (a, b) { return (b.size || 0) - (a.size || 0); }
-    };
-    list.sort(sorters[filters.sort] || sorters.rooms);
+    var key = sortKeys[filters.sort] || sortKeys.rooms, sign = filters.dir === "asc" ? 1 : -1;
+    function cmp(x, y) {
+      if (x === null || y === null) return x === y ? 0 : x === null ? 1 : -1;
+      return sign * (typeof x === "string" ? x.localeCompare(y, "sv", { numeric: true }) : x - y);
+    }
+    list.sort(function (a, b) { return cmp(key(a), key(b)) || (filters.sort === "rooms" ? cmp(a.size, b.size) : 0); });
     var tb = $("rows"); tb.textContent = "";
     list.forEach(function (o) {
       var tr = el("tr");
@@ -318,7 +349,12 @@ td .sub { display: block; color: var(--muted); font-size: 12px; }
   Array.prototype.forEach.call($("fStatus").children, function (b) { b.addEventListener("click", function () { filters.status = b.getAttribute("data-v"); saveFilters(); render(); }); });
   $("fRooms").addEventListener("change", function () { filters.rooms = +this.value; saveFilters(); render(); });
   $("fPrice").addEventListener("input", function () { filters.price = this.value; saveFilters(); renderObjekt(); });
-  $("fSort").addEventListener("change", function () { filters.sort = this.value; saveFilters(); render(); });
+  $("fSort").addEventListener("change", function () { var v = this.value.split(":"); filters.sort = v[0]; filters.dir = v[1]; saveFilters(); render(); });
+  Array.prototype.forEach.call($("objHead").children, function (th) {
+    var b = el("button", "", th.textContent); b.type = "button"; b.title = "Sortera på " + th.textContent.toLowerCase();
+    b.addEventListener("click", function () { setSort(th.getAttribute("data-k")); });
+    th.textContent = ""; th.appendChild(b);
+  });
   $("fFresh").addEventListener("change", function () { filters.fresh = this.checked; saveFilters(); render(); });
 
   renderStats(); renderChanges(); render();
