@@ -238,6 +238,61 @@ Brf The Brick Rubigo|Midsommarkransen|Diavoxvägen 32|Till salu|2|34|2|3047|2395
 Brf The Brick Rubigo|Midsommarkransen|Diavoxvägen 32|Till salu|2|34|3|3047|2625000|10 månader||bostad/4540519|2026-11-20
 Brf Konvolvulus 9|Midsommarkransen|Vattenledningsvägen 39|Till salu|2|30|1|2164|2650000|1 månad||annons/6305737|2026-11-20
 Brf Blyertspennan 4|Midsommarkransen|Nyårsvägen 15|Till salu|3|53|1|3531|2795000|7 dagar|Visning sön 22 nov kl 13:45.|bostad/4580473|2026-11-20
+Brf Bokbindaren|Hägerstensåsen|Bokbindarvägen 80|Snart till salu|2|54|1|4072||11 månader||annons/5969333|2026-11-20
+Brf Bokbindaren|Hägerstensåsen|Bokbindarvägen 80|Snart till salu|2|53,5|5|||1 år||bostad/336045|2026-11-20
+Brf Sparbanksvägen 43-49|Hägerstensåsen|Sparbanksvägen 43|Snart till salu|2|55|2|5116||1 månad||bostad/744305|2026-11-20
+Brf Tryckstenen 3|Hägerstensåsen|Bäckvägen 127|Till salu|2|43|2|4306|2495000|21 dagar|Budgivning pågår. Visning sön 22 nov kl 13:20.|bostad/417270|2026-11-20
+Brf Tryckstenen 3|Hägerstensåsen|Bäckvägen 129|Till salu|2|43|1|4305|2500000|2 månader||bostad/3925926|2026-11-20
+Brf Högst på Åsen|Hägerstensåsen|Arvodesvägen 18|Snart till salu|1|20|2|1859||1 månad||bostad/139447|2026-11-20
+Brf Högst på Åsen|Hägerstensåsen|Arvodesvägen 18|Snart till salu|1|20|2|1859|1795000|3 månader||bostad/139448|2026-11-20
+Brf Högst på Åsen|Hägerstensåsen|Arvodesvägen 20|Snart till salu|1|20|2|1859||10 månader||bostad/139461|2026-11-20
+Brf Högst på Åsen|Hägerstensåsen|Arvodesvägen 20|Snart till salu|1|20|1|1860|1750000|10 månader||bostad/139458|2026-11-20
+Sparbanksvägen 10-16 Brf|Hägerstensåsen|Sparbanksvägen 12|Snart till salu|1|37||3453|1795000|3 månader||bostad/4309312|2026-11-20
+Sparbanksvägen 10-16 Brf|Hägerstensåsen|Sparbanksvägen 10|Snart till salu|3|68|1|5732||9 månader||bostad/4011257|2026-11-20
+Sparbanksvägen 10-16 Brf|Hägerstensåsen|Sparbanksvägen 14|Snart till salu|1,5|35|1|3267|2495000|3 år||bostad/4309308|2026-11-20
+Brf Obligationen 2|Hägerstensåsen|Sparbanksvägen 50|Snart till salu|2|45|2|4597||Inkommet idag||annons/6355269|2026-11-20
+Brf Obligationen 2|Hägerstensåsen|Sparbanksvägen 50|Till salu|2|45|2|4597|2895000|Inkommet igår|Visning sön 29 nov kl 13:15.|bostad/4012024|2026-11-20
+Brf Obligationen 2|Hägerstensåsen|Sparbanksvägen 46|Till salu|2|45|1|4597|2600000|17 dagar|Visning sön 22 nov kl 13:00.|bostad/4012012|2026-11-20
+Brf Obligationen 2|Hägerstensåsen|Sparbanksvägen 40|Snart till salu|1|27|-1|2757|1895000|1 månad||bostad/4011990|2026-11-20
+Brf Obligationen 2|Hägerstensåsen|Sparbanksvägen 40|Snart till salu|2|45|2|4597|2895000|5 månader||bostad/4011995|2026-11-20
+Brf Tryckpressen 3|Hägerstensåsen|Bäckvägen 108|Till salu|1|35||2784|1995000|2 månader|Budgivning pågår. Visning sön 22 nov kl 14:00.|bostad/417336|2026-11-20
+Brf Tryckpressen 3|Hägerstensåsen|Bäckvägen 108|Snart till salu|1|35||2357||6 år||annons/3843647|2026-11-20
+Brf Mäklaren 1|Hägerstensåsen|Inteckningsvägen 23|Till salu|3|58|1|4002|3295000|Inkommet idag|Visning sön 29 nov kl 13:00.|bostad/133230|2026-11-20
+Brf Mäklaren 1|Hägerstensåsen|Inteckningsvägen 19|Till salu|2|58|3|4002|2995000|7 dagar|Visning sön 22 nov kl 12:00.|annons/6345207|2026-11-20
+Brf Räkningen 1|Hägerstensåsen|Arvodesvägen 23|Till salu|1|24|2|1686|2150000|1 månad||bostad/139429|2026-11-20
+Brf Sedelpressen|Hägerstensåsen|Inteckningsvägen 103|Till salu|2|52|2|4897|2995000|Inkommet idag|Visning sön 29 nov kl 12:15.|annons/6311273|2026-11-20
+Brf Sedelpressen|Hägerstensåsen|Inteckningsvägen 97|Till salu|2|52|2|4897|2495000|20 dagar|Visning sön 22 nov kl 13:45.|bostad/3885595|2026-11-20
+Brf Skattsedeln 6|Hägerstensåsen|Sparbanksvägen 22|Snart till salu|2||2|4198||14 dagar||annons/6340907|2026-11-20
+Brf Lotteriet 3|Hägerstensåsen|Lotterivägen 12|Till salu|2|58|2|4260|3495000|1 månad||annons/6197846|2026-11-20
+Brf Lotteriet 3|Hägerstensåsen|Lotterivägen 10|Snart till salu|2|56|3|4260||2 månader||bostad/662411|2026-11-20
+Brf Motvind|Hägerstensåsen|Bokbindarvägen 53|Snart till salu|3|65|3|5097|4395000|4 månader||annons/6202838|2026-11-20
+Brf Räkningen 2|Hägerstensåsen|Arvodesvägen 15|Snart till salu|2|56|3|2800||2 månader||bostad/139475|2026-11-20
+Brf Avdragaren 4|Hägerstensåsen|Bäckvägen 153|Till salu|2|47|2|3399|2895000|11 dagar|Budgivning pågår. Visning sön 22 nov kl 16:15.|bostad/4095138|2026-11-20
+Brf Avdragaren 4|Hägerstensåsen|Bäckvägen 149|Till salu|1|26|2|2263|1795000|3 månader|Visning sön 22 nov kl 12:00.|annons/6192202|2026-11-20
+Brf Avdragaren 4|Hägerstensåsen|Bäckvägen 149|Snart till salu|1|26|1|2373|1995000|3 månader||bostad/4095179|2026-11-20
+Brf Avdragaren 4|Hägerstensåsen|Bäckvägen 151|Snart till salu|2|48|2|3429||1 år||bostad/4095147|2026-11-20
+Brf Avdragaren 4|Hägerstensåsen|Bäckvägen 149|Snart till salu|1|26|2|2373|1995000|1 år||annons/5688143|2026-11-20
+Brf Avdragaren 4|Hägerstensåsen|Bäckvägen 157|Snart till salu|2|47|1|3394||1 år||annons/5954285|2026-11-20
+Brf Avdragaren 4|Hägerstensåsen|Bäckvägen 149|Snart till salu|1|26|3|2263|2295000|3 år||annons/4660294|2026-11-20
+Brf Intecknaren|Hägerstensåsen|Inteckningsvägen 35|Snart till salu|2|51|3|4874||1 månad||bostad/133211|2026-11-20
+Brf Intecknaren|Hägerstensåsen|Inteckningsvägen 33|Snart till salu|1|33|1|3154|2000000|8 månader||bostad/133223|2026-11-20
+Brf Dörrar på glänt|Hägerstensåsen|Bäckvägen 120|Snart till salu|3|57|1|4515||1 månad||bostad/417286|2026-11-20
+Brf Dörrar på glänt|Hägerstensåsen|Bäckvägen 120|Till salu|1|25|3|2513|2295000|1 månad||annons/5983374|2026-11-20
+Brf Guldmyntet|Hägerstensåsen|Kamrerarvägen 30|Snart till salu|3|82|3|4899||15 dagar||annons/6337702|2026-11-20
+Brf Kamreraren|Hägerstensåsen|Inteckningsvägen 9|Till salu|1|29||2301|1895000|9 dagar|Budgivning pågår. Visning sön 22 nov kl 12:30.|bostad/4205266|2026-11-20
+Brf Kamreraren|Hägerstensåsen|Inteckningsvägen 11|Snart till salu|2|55|3|||1 år||annons/5795234|2026-11-20
+Brf Boktryckaren 1|Hägerstensåsen|Bokbindarvägen 28|Snart till salu|2|39|1|3946|2595000|14 dagar||bostad/4202909|2026-11-20
+Brf Boktryckaren 1|Hägerstensåsen|Bokbindarvägen 26|Snart till salu|1|28||2462|1750000|17 dagar||bostad/4308974|2026-11-20
+Brf Boktryckaren 1|Hägerstensåsen|Bokbindarvägen 26|Snart till salu|2|39|2|3946|2495000|2 månader||annons/5953211|2026-11-20
+Brf Nattläxan|Hägerstensåsen|Riksdalervägen 11|Snart till salu|4|111||7717||2 månader||bostad/706869|2026-11-20
+Brf Lineotypen 7 & 8|Hägerstensåsen|Bokbindarvägen 15|Till salu|1|22|3|2146|1795000|21 dagar||bostad/4368762|2026-11-20
+Brf Lineotypen 7 & 8|Hägerstensåsen|Boktryckarvägen 7|Snart till salu|1|25|1|2439||1 månad||annons/6315679|2026-11-20
+Brf Juvelen på åsen|Hägerstensåsen|Arvodesvägen 5|Till salu|2|47||4879|2395000|6 dagar|Visning sön 22 nov kl 15:45.|bostad/4518647|2026-11-20
+Brf Juvelen på åsen|Hägerstensåsen|Arvodesvägen 5|Snart till salu|2|47|2|4879||14 dagar||bostad/4518646|2026-11-20
+Brf Sparhöjden|Hägerstensåsen|Sparbanksvägen 6|Till salu|1|29|4|2172|1950000|27 dagar|Visning sön 22 nov kl 14:30.|bostad/4539515|2026-11-20
+Brf Sparhöjden|Hägerstensåsen|Sparbanksvägen 6|Till salu|1|29|8|2172|1995000|2 månader|Visning sön 22 nov kl 15:20.|bostad/4539537|2026-11-20
+Brf Sparhöjden|Hägerstensåsen|Sparbanksvägen 6|Till salu|1|29|2|2172|1995000|3 månader||bostad/4539488|2026-11-20
+Brf Vildrosen 11|Midsommarkransen|Nioörtsvägen 26|Till salu|2|36|2|2476|2700000|6 månader|Visning sön 29 nov kl 13:00.|bostad/4537428|2026-11-20
 `,
 
   foreningar: `
@@ -248,25 +303,28 @@ Brf Aprilgatan 12|Midsommarkransen|20|1911||266732|Äger marken
 Brf Arvodet 2|Hägerstensåsen|30|1944|2007|75960|Äger marken
 Brf Arvodet-Kvittensen|Hägerstensåsen|48|1946|2001|80612|Äger marken
 Brf Assuransen Hägersten|Hägerstensåsen|||2003||
+Brf Avdragaren 4|Hägerstensåsen|60|1944||271006|Äger marken
 Brf Avgiften 1|Hägerstensåsen|23||1984||
 Brf Bergsparken|Hägerstensåsen|86||2004|55196|Tomträtt
 Brf Blomsteräng|Midsommarkransen|47|2011||78744|Äger marken
 Brf Blyertspennan 4|Midsommarkransen||||298929|
 Brf Blåklockan i Midsommarkransen|Midsommarkransen|27|1938||79031|Äger marken
 Brf Bläckpennan|Midsommarkransen|41|1947||57438|Tomträtt
-Brf Bokbindaren|Hägerstensåsen|26||2005||
+Brf Bokbindaren|Hägerstensåsen|26||2005|47298|Äger marken
 Brf Bokbindarvägen 72|Hägerstensåsen|||2003||
 Brf Bokbindarvägen 76|Hägerstensåsen|||2006||
 Brf Bokbindarvägen 78|Hägerstensåsen|36|1944|2008|81222|Äger marken
+Brf Boktryckaren 1|Hägerstensåsen|20|||278210|Äger marken
 Brf Boston|Midsommarkransen|47|||286098|Äger marken
 Brf Bäckvägen 46-52|Midsommarkransen|38|||47438|Tomträtt
 Brf Dagtraktamentet nr 3 och 4|Hägerstensåsen|36||1980|54273|Äger marken
 Brf Dvärgbjörken 12 I Hägersten|Midsommarkransen|30|||68273|Tomträtt
-Brf Dörrar på glänt|Hägerstensåsen|||2005||
+Brf Dörrar på glänt|Hägerstensåsen|12||2005|272882|Äger marken
 Brf Enen 25|Midsommarkransen|34|1939||81017|Äger marken
 Brf Flygplansfabriken|Telefonplan|73|2015|2007|78743|Äger marken
 Brf Förskottet 4|Hägerstensåsen|36||2004|268656|Äger marken
 Brf Grillstugan|Midsommarkransen|10|1934||81075|Äger marken
+Brf Guldmyntet|Hägerstensåsen|71|2019||277025|Äger marken
 Brf Gåvoskatten 3 o 4|Hägerstensåsen|30||1978|49815|Äger marken
 Brf Handpenningen|Hägerstensåsen|40|1947|2004|260500|Äger marken
 Brf Handpressen 6|Hägerstensåsen|4||2006||
@@ -275,10 +333,12 @@ Brf Hundrovan 3|Midsommarkransen|126|1943||49567|Tomträtt
 Brf Hundrovan 5|Midsommarkransen|13|1936||82016|Äger marken
 Brf Hypoteket|Hägerstensåsen|||2004||
 Brf Hägerstenshöjden|Hägerstensåsen|65|1952|1996|51780|Äger marken
-Brf Högst på Åsen|Hägerstensåsen|26|1947|2001||
+Brf Högst på Åsen|Hägerstensåsen|26|1947|2001|53139|Äger marken
 Brf Idegranen 6|Midsommarkransen|13|||80346|Äger marken
 Brf Insteget|Telefonplan|255|1972|2007|46316|Äger marken
-Brf Intecknaren|Hägerstensåsen|20||2011||
+Brf Intecknaren|Hägerstensåsen|20|1945|2011|272725|Tomträtt
+Brf Juvelen på åsen|Hägerstensåsen|27|1945||284246|Äger marken
+Brf Kamreraren|Hägerstensåsen|31|||278055|Tomträtt
 Brf Kobran Telefonplan|Telefonplan|55|2012|2010|78809|Äger marken
 Brf Kofferten|Hägerstensåsen|67|1948|2004|53270|Äger marken
 Brf Konvolv|Midsommarkransen|12|||79485|Äger marken
@@ -292,10 +352,11 @@ Brf Kubisten|Telefonplan|62||2011|76371|Äger marken
 Brf Kvittensen 3|Hägerstensåsen|18||1983||
 Brf Kåpan 2|Midsommarkransen|12|1944||267567|Tomträtt
 Brf Köpeskillingen 2|Hägerstensåsen|||2012||
+Brf Lineotypen 7 & 8|Hägerstensåsen|37|||283153|Äger marken
 Brf Lineotypen 9|Hägerstensåsen|||2005||
 Brf Lotteriet|Hägerstensåsen|18||2004||
 Brf Lotteriet 12|Hägerstensåsen|||2008||
-Brf Lotteriet 3|Hägerstensåsen|18||2004||
+Brf Lotteriet 3|Hägerstensåsen|18|1948|2004|268227|Äger marken
 Brf Lotterivägen 19-37|Hägerstensåsen|59|1947|2004|63674|Äger marken
 Brf Martallen|Midsommarkransen|61|1929||274735|Äger marken
 Brf Martallen 2526|Midsommarkransen|29|1943||280356|Tomträtt
@@ -305,13 +366,14 @@ Brf Midsommarblomman|Midsommarkransen|54|2007||51539|Äger marken
 Brf Midsommarbuketten|Midsommarkransen|112|2009||53552|Äger marken
 Brf Midsommarkransens Martall 37|Midsommarkransen|17|1939||276171|Äger marken
 Brf Midsommarparken|Midsommarkransen|43|1938||78277|Äger marken
-Brf Motvind|Hägerstensåsen|25|1944|2000||
+Brf Motvind|Hägerstensåsen|25|1944|2000|269456|Äger marken
 Brf Månhästen|Midsommarkransen|94|1993||49688|Tomträtt
-Brf Mäklaren 1|Hägerstensåsen|21|1945|2008||
+Brf Mäklaren 1|Hägerstensåsen|21|1945|2008|76618|Tomträtt
 Brf Mäklaren 7|Hägerstensåsen|||2012||
 Brf Mälarglimt|Midsommarkransen|20|1942||78873|Tomträtt
-Brf Nattläxan|Hägerstensåsen|20|1986|2004||
+Brf Nattläxan|Hägerstensåsen|20|1986|2004|279727|Äger marken
 Brf Nässlan 5|Midsommarkransen|14|2000||82380|Äger marken
+Brf Obligationen 2|Hägerstensåsen|40|1971||55336|Tomträtt
 Brf Obligationen 4|Hägerstensåsen|30|1945|2005|79288|Tomträtt
 Brf Obligationen 5|Hägerstensåsen|30||2005|48338|Tomträtt
 Brf Obligationen 7|Hägerstensåsen|||1990||
@@ -325,17 +387,19 @@ Brf Radiusfabriken|Midsommarkransen|50|||80943|Äger marken
 Brf Reservoarpennan 5|Midsommarkransen|19|1943||49552|Tomträtt
 Brf Rosenhöjden|Hägerstensåsen|35|2000|1999|57588|Äger marken
 Brf Rullen 1|Midsommarkransen|12|1944||273947|Tomträtt
-Brf Räkningen 1|Hägerstensåsen|25|1947|1987||
-Brf Räkningen 2|Hägerstensåsen|18||1987||
-Brf Sedelpressen|Hägerstensåsen|24|2014|2010||
+Brf Räkningen 1|Hägerstensåsen|25|1947|1987|79682|Äger marken
+Brf Räkningen 2|Hägerstensåsen|18||1987|270343|Äger marken
+Brf Sedelpressen|Hägerstensåsen|24|2014|2010|108313|Tomträtt
 Brf Silvergranen 12|Telefonplan|103|1993|2007|49584|Tomträtt
 Brf Skattsedeln 1|Hägerstensåsen|65||2004|96606|Äger marken
 Brf Skattsedeln 3|Hägerstensåsen|36|1947|2004|78991|Äger marken
-Brf Skattsedeln 6|Hägerstensåsen|25|1946|2004||
+Brf Skattsedeln 6|Hägerstensåsen|25|1946|2004|267017|Äger marken
 Brf Skorstenen|Hägerstensåsen|36|1946|2004|54107|Äger marken
 Brf Smältrullen|Telefonplan|75||2008|56058|Äger marken
 Brf Sparbanksboken 5|Hägerstensåsen|||2005||
+Brf Sparbanksvägen 43-49|Hägerstensåsen|25|||47741|Tomträtt
 Brf Sparboken 4|Hägerstensåsen|31|1946|2007|46225|Tomträtt
+Brf Sparhöjden|Hägerstensåsen||||298570|
 Brf Spolen 4|Midsommarkransen|22|2007||245457|Tomträtt
 Brf Spolen i Hägersten|Midsommarkransen|45|1980||271716|Tomträtt
 Brf Stora Arvodet 22|Hägerstensåsen|||2012||
@@ -353,10 +417,10 @@ Brf The Brick Rubigo|Midsommarkransen||||286975|
 Brf The Brick Terra|Telefonplan|346|1974|2013|278354|Äger marken
 Brf Torghusen|Telefonplan|113|2009|2007|43407|Äger marken
 Brf Tryckarket 4|Hägerstensåsen|55|1944|2000|76865|Äger marken
-Brf Tryckpressen 3|Hägerstensåsen|18|1944|1999||
+Brf Tryckpressen 3|Hägerstensåsen|18|1944|1999|55802|Äger marken
 Brf Tryckpressen 4|Hägerstensåsen|20|1942|2002||
 Brf Tryckpressen nr 5|Hägerstensåsen|12||1980||
-Brf Tryckstenen 3|Hägerstensåsen|19|1939|2001||
+Brf Tryckstenen 3|Hägerstensåsen|19|1939|2001|49556|Äger marken
 Brf Trycksvärtan|Hägerstensåsen|24|2006|2005||
 Brf Trycksvärtan 2|Hägerstensåsen|11|1946|2004||
 Brf Trycksvärtan 7|Hägerstensåsen|15||2003||
@@ -364,6 +428,7 @@ Brf Trädkronan|Hägerstensåsen|51||2006|267262|Tomträtt
 Brf Tångspiken|Midsommarkransen|34|1944||83073|Tomträtt
 Brf Vattenledningsvägen 51|Midsommarkransen|12|||79713|Äger marken
 Brf Vildrosen|Midsommarkransen|31|1973||57659|Äger marken
+Brf Vildrosen 11|Midsommarkransen||||298960|
 Brf Vildrosen Nr 9|Midsommarkransen|24|||83669|Äger marken
 Brf Violen i Midsommarkransen|Midsommarkransen|69|1939||55726|Äger marken
 Brf Violen nr 14|Midsommarkransen|34|1983||51749|Äger marken
@@ -376,10 +441,12 @@ HSB Brf Dialogen|Midsommarkransen|37|2023||284868|Äger marken
 HSB Brf Tvålflingan i Stockholm|Telefonplan|167|2008|2005|55027|Äger marken
 HSB Brf Växeln|Telefonplan|217|2024|2017|286779|Äger marken
 Riksbyggen Brf Stockholmshus nr 7|Midsommarkransen|106|1944||78870|Tomträtt
+Sparbanksvägen 10-16 Brf|Hägerstensåsen|39|1945||55085|Äger marken
 Svenska Folkbyggen Brf Nr 6|Midsommarkransen|33|1946||55849|Tomträtt
 `,
 
   andringar: `
+2026-11-20|Hägerstensåsen||Området genomsökt: 10 nya föreningar, 14 föreningar bevakas nu och 54 annonser tillagda.
 2026-11-20|Midsommarkransen||Nytt område: 57 föreningar och 99 annonser tillagda.
 2026-11-20|Brf Tellusborgshus|Cedergrensvägen 59|Gick från snart till salu till till salu, utropspris 2 495 000 kr.
 2026-11-19|Brf Bokbindarvägen 78|Bokbindarvägen 78|Ny annons: 2 rum, 50 m², snart till salu.

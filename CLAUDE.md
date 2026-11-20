@@ -45,11 +45,17 @@ Datan kommer från föreningssidorna `https://www.booli.se/bostadsrattsforening/
   för varje annons som tillkommit, försvunnit, bytt status eller ändrat pris.
 - Försök aldrig ta dig förbi botskydd eller CAPTCHA på Booli.
 
-Området Midsommarkransen är Boolis stadsdel med samma namn
-(`https://www.booli.se/sok/till-salu?areaIds=874697`), utom de föreningar som
-redan ligger under Telefonplan. Registret där innehåller bara föreningar som hade
-en annons när området lades till. Nya föreningar hittas genom att öppna annonserna
-i sökningen och följa länken till föreningen.
+Föreningssidorna visar bara föreningar som redan finns i registret. Föreningar som
+saknas hittas genom att gå igenom områdets sökning
+(`https://www.booli.se/sok/till-salu?areaIds=<id>`), öppna varje annons och följa
+länken till föreningen:
+
+- Hägerstensåsen: Boolis stadsdel, `areaIds=30`.
+- Midsommarkransen: Boolis stadsdel, `areaIds=874697`, utom de föreningar som redan
+  ligger under Telefonplan. Registret innehåller bara föreningar som hade en annons
+  när området lades till.
+- Telefonplan: Boolis område `areaIds=1521` är bredare än registrets Telefonplan och
+  tar även med Aspudden, Axelsberg och Örnsberg. De föreningarna ska inte läggas till.
 
 Det finns även ett privat Google-kalkylark, "Bostadsrättsföreningar – register",
 med samma data plus anteckningar och källor. Sajten läser inte arket. Fråga
