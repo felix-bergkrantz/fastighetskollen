@@ -166,7 +166,7 @@ td .sub { display: block; color: var(--muted); font-size: 12px; }
     <p class="count" id="brfCount"></p>
     <div class="tablebox">
       <table>
-        <thead><tr><th>Förening</th><th>Område</th><th class="num">Lägenheter</th><th class="num">Registrerad</th><th>Mark</th><th class="num">Till salu</th><th class="num">Snart</th></tr></thead>
+        <thead><tr id="brfHead"><th data-k="name">Förening</th><th data-k="area">Område</th><th class="num" data-k="flats">Lägenheter</th><th class="num" data-k="reg">Registrerad</th><th data-k="land">Mark</th><th class="num" data-k="sale">Till salu</th><th class="num" data-k="soon">Snart</th></tr></thead>
         <tbody id="brfRows"></tbody>
       </table>
     </div>
@@ -180,7 +180,7 @@ td .sub { display: block; color: var(--muted); font-size: 12px; }
 (function () {
   var $ = function (id) { return document.getElementById(id); };
   var D = window.BOSTADSDATA;
-  var filters = { area: "", status: "", rooms: 0, price: "", sort: "rooms", dir: "desc", fresh: false };
+  var filters = { area: "", status: "", rooms: 0, price: "", sort: "rooms", dir: "desc", brfSort: "flats", brfDir: "desc", fresh: false };
   try { var saved = JSON.parse(localStorage.getItem("bb-filters") || "null"); if (saved) for (var k in filters) if (k in saved) filters[k] = saved[k]; } catch (e) {}
   // Äldre sparade sorteringsval, från innan kolumnrubrikerna gick att klicka på.
   var oldSort = { "new": ["time", "asc"], priceAsc: ["price", "asc"], feeAsc: ["fee", "asc"], area: ["size", "desc"] }[filters.sort];
@@ -257,8 +257,11 @@ td .sub { display: block; color: var(--muted); font-size: 12px; }
     $("fRooms").value = String(filters.rooms); $("fPrice").value = filters.price; $("fFresh").checked = !!filters.fresh;
     $("fSort").value = filters.sort + ":" + filters.dir;
     if ($("fSort").value !== filters.sort + ":" + filters.dir) $("fSort").selectedIndex = -1;
-    Array.prototype.forEach.call($("objHead").children, function (th) {
-      if (th.getAttribute("data-k") === filters.sort) th.setAttribute("aria-sort", filters.dir === "asc" ? "ascending" : "descending");
+    markHead("objHead", filters.sort, filters.dir); markHead("brfHead", filters.brfSort, filters.brfDir);
+  }
+  function markHead(id, sort, dir) {
+    Array.prototype.forEach.call($(id).children, function (th) {
+      if (th.getAttribute("data-k") === sort) th.setAttribute("aria-sort", dir === "asc" ? "ascending" : "descending");
       else th.removeAttribute("aria-sort");
     });
   }
@@ -274,10 +277,28 @@ td .sub { display: block; color: var(--muted); font-size: 12px; }
     price: function (o) { return o.price; },
     time: function (o) { return ageDays(o.time); }
   };
-  function setSort(key) {
-    if (filters.sort === key) filters.dir = filters.dir === "asc" ? "desc" : "asc";
-    else { filters.sort = key; filters.dir = key === "rooms" || key === "size" ? "desc" : "asc"; }
+  var brfSortKeys = {
+    name: function (b) { return b.name || null; },
+    area: function (b) { return b.area || null; },
+    flats: function (b) { return b.flats; },
+    reg: function (b) { return num(b.reg); },
+    land: function (b) { return b.land || null; },
+    sale: function (b) { return b.sale; },
+    soon: function (b) { return b.soon; }
+  };
+  var descFirst = ["rooms", "size", "flats", "sale", "soon"];
+  // sortField och dirField är namnen i filters: sort/dir för objekt, brfSort/brfDir för föreningar.
+  function setSort(sortField, dirField, key) {
+    if (filters[sortField] === key) filters[dirField] = filters[dirField] === "asc" ? "desc" : "asc";
+    else { filters[sortField] = key; filters[dirField] = descFirst.indexOf(key) >= 0 ? "desc" : "asc"; }
     saveFilters(); render();
+  }
+  function comparer(dir) {
+    var sign = dir === "asc" ? 1 : -1;
+    return function (x, y) {
+      if (x === null || y === null) return x === y ? 0 : x === null ? 1 : -1;
+      return sign * (typeof x === "string" ? x.localeCompare(y, "sv", { numeric: true }) : x - y);
+    };
   }
   function renderObjekt() {
     var max = num(filters.price);
@@ -289,11 +310,7 @@ td .sub { display: block; color: var(--muted); font-size: 12px; }
       if (filters.fresh) { var d = ageDays(o.time); if (d !== null && d > 183) return false; }
       return true;
     });
-    var key = sortKeys[filters.sort] || sortKeys.rooms, sign = filters.dir === "asc" ? 1 : -1;
-    function cmp(x, y) {
-      if (x === null || y === null) return x === y ? 0 : x === null ? 1 : -1;
-      return sign * (typeof x === "string" ? x.localeCompare(y, "sv", { numeric: true }) : x - y);
-    }
+    var key = sortKeys[filters.sort] || sortKeys.rooms, cmp = comparer(filters.dir);
     list.sort(function (a, b) { return cmp(key(a), key(b)) || (filters.sort === "rooms" ? cmp(a.size, b.size) : 0); });
     var tb = $("rows"); tb.textContent = "";
     list.forEach(function (o) {
@@ -320,7 +337,8 @@ td .sub { display: block; color: var(--muted); font-size: 12px; }
   }
   function renderBrf() {
     var list = brf.filter(function (b) { return !filters.area || b.area === filters.area; });
-    list.sort(function (a, b) { return (b.flats || 0) - (a.flats || 0); });
+    var key = brfSortKeys[filters.brfSort] || brfSortKeys.flats, cmp = comparer(filters.brfDir);
+    list.sort(function (a, b) { return cmp(key(a), key(b)); });
     var tb = $("brfRows"); tb.textContent = "";
     list.forEach(function (b) {
       var tr = el("tr");
@@ -334,7 +352,7 @@ td .sub { display: block; color: var(--muted); font-size: 12px; }
       var q = td("num", "", "Snart:"); if (b.soon) q.appendChild(el("span", "pill soon", String(b.soon))); else q.textContent = b.soon === null ? "" : "0"; tr.appendChild(q);
       tb.appendChild(tr);
     });
-    $("brfCount").textContent = list.length + " föreningar" + (filters.area ? " i " + filters.area : "") + ", störst först. Antal till salu visas bara för föreningar som bevakas på Booli.";
+    $("brfCount").textContent = list.length + " föreningar" + (filters.area ? " i " + filters.area : "") + ". Antal till salu visas bara för föreningar som bevakas på Booli.";
   }
   function render() { renderFilters(); renderObjekt(); renderBrf(); }
 
@@ -350,10 +368,12 @@ td .sub { display: block; color: var(--muted); font-size: 12px; }
   $("fRooms").addEventListener("change", function () { filters.rooms = +this.value; saveFilters(); render(); });
   $("fPrice").addEventListener("input", function () { filters.price = this.value; saveFilters(); renderObjekt(); });
   $("fSort").addEventListener("change", function () { var v = this.value.split(":"); filters.sort = v[0]; filters.dir = v[1]; saveFilters(); render(); });
-  Array.prototype.forEach.call($("objHead").children, function (th) {
-    var b = el("button", "", th.textContent); b.type = "button"; b.title = "Sortera på " + th.textContent.toLowerCase();
-    b.addEventListener("click", function () { setSort(th.getAttribute("data-k")); });
-    th.textContent = ""; th.appendChild(b);
+  [["objHead", "sort", "dir"], ["brfHead", "brfSort", "brfDir"]].forEach(function (h) {
+    Array.prototype.forEach.call($(h[0]).children, function (th) {
+      var b = el("button", "", th.textContent); b.type = "button"; b.title = "Sortera på " + th.textContent.toLowerCase();
+      b.addEventListener("click", function () { setSort(h[1], h[2], th.getAttribute("data-k")); });
+      th.textContent = ""; th.appendChild(b);
+    });
   });
   $("fFresh").addEventListener("change", function () { filters.fresh = this.checked; saveFilters(); render(); });
 
