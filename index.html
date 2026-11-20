@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bostadsbevakning</title>
+<meta name="description" content="Bostadsrätter till salu och snart till salu i bevakade föreningar i Hägerstensåsen och Telefonplan.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap">
+<style>
+/* Layout: en arbetsyta. Sammanfattning överst, senaste ändringar, sedan filter och en tät objektlista. */
+:root {
+  --bg: #f2f5f6; --surface: #ffffff; --ink: #14262e; --muted: #5b6f78; --line: #d5dee2;
+  --accent: #0f6b7a; --accent-ink: #ffffff; --accent-soft: #dceef1;
+  --sale: #1d7a46; --sale-bg: #d9f0e1; --soon: #8a5a00; --soon-bg: #fbe9b8;
+  --warn: #9a3412; --warn-bg: #fde6d8;
+  --display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+  --body: "Inter", "Segoe UI", system-ui, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e1a1f; --surface: #16262d; --ink: #e6eff2; --muted: #94a9b2; --line: #2a3d46;
+    --accent: #5cc3d3; --accent-ink: #06222a; --accent-soft: #173a43;
+    --sale: #7ddba2; --sale-bg: #153a26; --soon: #f2c967; --soon-bg: #3d2f0a;
+    --warn: #ffb08a; --warn-bg: #43200f; color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 14px; line-height: 1.45; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 20px 16px 48px; display: flex; flex-direction: column; gap: 20px; }
+h1 { font-family: var(--display); font-size: 26px; font-weight: 600; margin: 0; text-wrap: balance; }
+h2 { font-family: var(--display); font-size: 16px; font-weight: 600; margin: 0; }
+a { color: var(--accent); }
+button, select, input { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.top { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: flex-end; justify-content: space-between; }
+.top p { margin: 4px 0 0; color: var(--muted); }
+.fresh { color: var(--muted); font-size: 13px; }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.stat { background: var(--surface); padding: 12px 14px; }
+.stat b { display: block; font-family: var(--display); font-size: 24px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.stat span { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .05em; }
+
+.notice { border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; }
+.notice.warn { border-color: var(--warn); background: var(--warn-bg); color: var(--warn); }
+.notice p { margin: 0; }
+
+.changes ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.changes li { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 4px 14px; padding: 9px 0; border-top: 1px solid var(--line); }
+.changes li:first-child { border-top: 0; }
+.changes time { color: var(--muted); font-variant-numeric: tabular-nums; }
+.changes .what { font-weight: 500; }
+.changes .detail { color: var(--muted); grid-column: 2; }
+
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); }
+.tabs a { padding: 8px 14px; text-decoration: none; color: var(--muted); border-bottom: 2px solid transparent; margin-bottom: -1px; font-weight: 500; }
+.tabs a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--accent); }
+
+.view { display: flex; flex-direction: column; gap: 14px; }
+.wrap > *, .view > * { min-width: 0; max-width: 100%; }
+.filters { display: flex; flex-wrap: wrap; gap: 12px 18px; align-items: flex-end; }
+.field { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.field > span { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; background: var(--surface); flex-wrap: wrap; }
+.seg button { border: 0; background: transparent; padding: 6px 11px; cursor: pointer; border-right: 1px solid var(--line); }
+.seg button:last-child { border-right: 0; }
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
+select, input[type="number"] { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 6px 9px; }
+input[type="number"] { width: 130px; }
+.check { flex-direction: row; align-items: center; gap: 7px; padding-bottom: 6px; }
+.check > span { text-transform: none; letter-spacing: 0; font-size: 14px; color: var(--ink); }
+.count { color: var(--muted); margin: 0; }
+
+.tablebox { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; min-width: 860px; }
+th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; font-weight: 600; white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+td .sub { display: block; color: var(--muted); font-size: 12px; }
+.pill { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+.pill.sale { background: var(--sale-bg); color: var(--sale); }
+.pill.soon { background: var(--soon-bg); color: var(--soon); }
+.pill.land { background: var(--accent-soft); color: var(--accent); font-weight: 500; }
+.old { color: var(--warn); }
+.empty { padding: 28px 16px; text-align: center; color: var(--muted); }
+.foot { color: var(--muted); font-size: 12px; margin: 0; }
+
+@media (max-width: 640px) {
+  table { min-width: 0; }
+  thead { display: none; }
+  tr { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; padding: 12px; border-bottom: 1px solid var(--line); }
+  tr:last-child { border-bottom: 0; }
+  td { padding: 0; border: 0; }
+  td.wide { grid-column: 1 / -1; }
+  td.num { text-align: left; }
+  td[data-l]::before { content: attr(data-l) " "; color: var(--muted); font-size: 12px; }
+  td:empty { display: none; }
+  .changes li { grid-template-columns: 1fr; }
+  .changes .detail { grid-column: 1; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>Bostadsbevakning</h1>
+      <p>Bostadsrätter till salu i de bevakade föreningarna i Hägerstensåsen och Telefonplan.</p>
+    </div>
+    <div class="fresh" id="freshText"></div>
+  </header>
+
+  <div id="notice" class="notice warn" hidden></div>
+
+  <section class="stats" aria-label="Sammanfattning">
+    <div class="stat"><b id="sSale">–</b><span>Till salu</span></div>
+    <div class="stat"><b id="sSoon">–</b><span>Snart till salu</span></div>
+    <div class="stat"><b id="sBrf">–</b><span>Bevakade föreningar</span></div>
+    <div class="stat"><b id="sScan">–</b><span>Senast avläst</span></div>
+  </section>
+
+  <section class="notice changes" id="changes" hidden>
+    <h2>Senaste ändringar</h2>
+    <ul id="changesList"></ul>
+  </section>
+
+  <nav class="tabs" aria-label="Vyer">
+    <a href="#objekt" id="tabObjekt">Objekt</a>
+    <a href="#foreningar" id="tabForeningar">Föreningar</a>
+  </nav>
+
+  <section id="viewObjekt" class="view">
+    <div class="filters">
+      <div class="field"><span>Område</span><div class="seg" id="fArea" role="group" aria-label="Område"></div></div>
+      <div class="field"><span>Status</span><div class="seg" id="fStatus" role="group" aria-label="Status">
+        <button type="button" data-v="">Alla</button><button type="button" data-v="Till salu">Till salu</button><button type="button" data-v="Snart till salu">Snart till salu</button></div></div>
+      <label class="field"><span>Rum, minst</span><select id="fRooms"><option value="0">Alla</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></label>
+      <label class="field"><span>Pris, högst (kr)</span><input type="number" id="fPrice" min="0" step="50000" placeholder="Ingen gräns"></label>
+      <label class="field"><span>Sortera</span><select id="fSort">
+        <option value="rooms">Rum, flest först</option><option value="new">Nyast först</option>
+        <option value="priceAsc">Pris, lägst först</option><option value="feeAsc">Avgift, lägst först</option><option value="area">Boarea, störst först</option></select></label>
+      <label class="field check"><input type="checkbox" id="fFresh"><span>Dölj annonser äldre än 6 månader</span></label>
+    </div>
+    <p class="count" id="count"></p>
+    <div class="tablebox">
+      <table>
+        <thead><tr><th>Adress</th><th>Förening</th><th>Status</th><th class="num">Rum</th><th class="num">Boarea</th><th class="num">Våning</th><th class="num">Avgift</th><th class="num">Pris</th><th>På Booli</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+      <div class="empty" id="rowsEmpty" hidden>Inga objekt matchar filtren.</div>
+    </div>
+  </section>
+
+  <section id="viewForeningar" class="view" hidden>
+    <p class="count" id="brfCount"></p>
+    <div class="tablebox">
+      <table>
+        <thead><tr><th>Förening</th><th>Område</th><th class="num">Lägenheter</th><th class="num">Registrerad</th><th>Mark</th><th class="num">Till salu</th><th class="num">Snart</th></tr></thead>
+        <tbody id="brfRows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <p class="foot">Uppgifterna är avlästa från booli.se och är en ögonblicksbild från datumet ovan. Tid på Booli räknas från avläsningen. Kontrollera alltid annonsen hos Booli eller mäklaren.</p>
+</div>
+
+<script src="data/data.js"></script>
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var D = window.BOSTADSDATA;
+  var filters = { area: "", status: "", rooms: 0, price: "", sort: "rooms", fresh: false };
+  try { var saved = JSON.parse(localStorage.getItem("bb-filters") || "null"); if (saved) for (var k in filters) if (k in saved) filters[k] = saved[k]; } catch (e) {}
+  function saveFilters() { try { localStorage.setItem("bb-filters", JSON.stringify(filters)); } catch (e) {} }
+
+  if (!D) { $("notice").textContent = "Datafilen data/data.js kunde inte läsas, så sidan har inget att visa."; $("notice").hidden = false; return; }
+
+  function num(s) {
+    if (s === undefined || s === null || s === "") return null;
+    var n = parseFloat(String(s).replace(/\s/g, "").replace(",", "."));
+    return isNaN(n) ? null : n;
+  }
+  function fmt(n) { return n === null ? "" : n.toLocaleString("sv-SE"); }
+  function lines(block) { return String(block || "").split("\n").map(function (l) { return l.trim(); }).filter(Boolean).map(function (l) { return l.split("|"); }); }
+  function ageDays(t) {
+    if (!t) return null;
+    if (/idag/i.test(t)) return 0;
+    if (/igår/i.test(t)) return 1;
+    var m = String(t).match(/(\d+)\s*(dag|månad|år)/i);
+    if (!m) return null;
+    var n = +m[1], u = m[2].toLowerCase();
+    return u === "dag" ? n : u === "månad" ? n * 30 : n * 365;
+  }
+
+  var objekt = lines(D.objekt).map(function (r) {
+    return { brf: r[0], area: r[1], addr: r[2], status: r[3], rooms: num(r[4]), size: num(r[5]), floor: r[6] || "", fee: num(r[7]),
+      price: num(r[8]), time: r[9] || "", show: r[10] || "", url: r[11] ? "https://www.booli.se/" + r[11] : "", read: r[12] || "" };
+  });
+  var counts = {};
+  objekt.forEach(function (o) { var c = counts[o.brf] || (counts[o.brf] = { sale: 0, soon: 0 }); if (o.status === "Till salu") c.sale++; else c.soon++; });
+  var brf = lines(D.foreningar).map(function (r) {
+    var watched = !!r[5], c = counts[r[0]] || { sale: 0, soon: 0 };
+    return { name: r[0], area: r[1], flats: num(r[2]), built: r[3] || "", reg: r[4] || "", land: r[6] || "", watched: watched,
+      url: watched ? "https://www.booli.se/bostadsrattsforening/" + r[5] : "", sale: watched ? c.sale : null, soon: watched ? c.soon : null };
+  });
+  var brfBy = {}; brf.forEach(function (b) { brfBy[b.name] = b; });
+  var changes = lines(D.andringar).map(function (r) { return { date: r[0], brf: r[1], addr: r[2], text: r[3] || "" }; });
+
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined) e.textContent = text; return e; }
+  function td(cls, text, label) { var c = el("td", cls, text); if (label) c.setAttribute("data-l", label); return c; }
+  function link(text, url) { var a = el("a", "", text); a.href = url; a.target = "_blank"; a.rel = "noopener"; return a; }
+
+  function renderStats() {
+    $("sSale").textContent = objekt.filter(function (o) { return o.status === "Till salu"; }).length;
+    $("sSoon").textContent = objekt.filter(function (o) { return o.status !== "Till salu"; }).length;
+    $("sBrf").textContent = brf.filter(function (b) { return b.watched; }).length;
+    $("sScan").textContent = D.avlast || "–";
+    $("freshText").textContent = D.avlast ? "Avläst från Booli " + D.avlast : "";
+  }
+  function renderChanges() {
+    if (!changes.length) return;
+    var ul = $("changesList");
+    changes.slice(0, 8).forEach(function (c) {
+      var li = el("li");
+      li.appendChild(el("time", "", c.date));
+      li.appendChild(el("span", "what", [c.addr, c.brf].filter(Boolean).join(" · ")));
+      if (c.text) li.appendChild(el("span", "detail", c.text));
+      ul.appendChild(li);
+    });
+    $("changes").hidden = false;
+  }
+  function renderFilters() {
+    var areas = []; objekt.concat(brf).forEach(function (o) { if (o.area && areas.indexOf(o.area) < 0) areas.push(o.area); });
+    areas.sort();
+    if (filters.area && areas.indexOf(filters.area) < 0) filters.area = "";
+    var box = $("fArea"); box.textContent = "";
+    [{ label: "Alla", value: "" }].concat(areas.map(function (a) { return { label: a, value: a }; })).forEach(function (v) {
+      var b = el("button", "", v.label); b.type = "button"; b.setAttribute("aria-pressed", String(v.value === filters.area));
+      b.addEventListener("click", function () { filters.area = v.value; saveFilters(); render(); });
+      box.appendChild(b);
+    });
+    Array.prototype.forEach.call($("fStatus").children, function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-v") === filters.status)); });
+    $("fRooms").value = String(filters.rooms); $("fPrice").value = filters.price; $("fSort").value = filters.sort; $("fFresh").checked = !!filters.fresh;
+  }
+  function renderObjekt() {
+    var max = num(filters.price), big = Number.MAX_VALUE;
+    var list = objekt.filter(function (o) {
+      if (filters.area && o.area !== filters.area) return false;
+      if (filters.status && o.status !== filters.status) return false;
+      if (filters.rooms && !(o.rooms !== null && o.rooms >= filters.rooms)) return false;
+      if (max !== null && !(o.price !== null && o.price <= max)) return false;
+      if (filters.fresh) { var d = ageDays(o.time); if (d !== null && d > 183) return false; }
+      return true;
+    });
+    var sorters = {
+      rooms: function (a, b) { return (b.rooms || 0) - (a.rooms || 0) || (b.size || 0) - (a.size || 0); },
+      new: function (a, b) { var x = ageDays(a.time), y = ageDays(b.time); return (x === null ? big : x) - (y === null ? big : y); },
+      priceAsc: function (a, b) { return (a.price === null ? big : a.price) - (b.price === null ? big : b.price); },
+      feeAsc: function (a, b) { return (a.fee === null ? big : a.fee) - (b.fee === null ? big : b.fee); },
+      area: function (a, b) { return (b.size || 0) - (a.size || 0); }
+    };
+    list.sort(sorters[filters.sort] || sorters.rooms);
+    var tb = $("rows"); tb.textContent = "";
+    list.forEach(function (o) {
+      var tr = el("tr");
+      var a = td("wide"); if (o.url) a.appendChild(link(o.addr, o.url)); else a.textContent = o.addr;
+      if (o.show) a.appendChild(el("span", "sub", o.show));
+      tr.appendChild(a);
+      var b = brfBy[o.brf], f = td("wide", o.brf);
+      var sub = [o.area, b && b.flats !== null ? fmt(b.flats) + " lgh" : "", b && b.land ? b.land.toLowerCase() : ""].filter(Boolean).join(" · ");
+      if (sub) f.appendChild(el("span", "sub", sub));
+      tr.appendChild(f);
+      var s = td(""); s.appendChild(el("span", "pill " + (o.status === "Till salu" ? "sale" : "soon"), o.status)); tr.appendChild(s);
+      tr.appendChild(td("num", o.rooms === null ? "" : fmt(o.rooms) + " rum"));
+      tr.appendChild(td("num", o.size === null ? "" : fmt(o.size) + " m²"));
+      tr.appendChild(td("num", o.floor ? (o.floor === "BV" ? "BV" : "vån " + o.floor) : ""));
+      tr.appendChild(td("num", o.fee === null ? "" : fmt(o.fee) + " kr/mån"));
+      tr.appendChild(td("num", o.price === null ? "Pris ej angivet" : fmt(o.price) + " kr"));
+      var d = ageDays(o.time);
+      tr.appendChild(td(d !== null && d > 183 ? "old" : "", o.time, "På Booli:"));
+      tb.appendChild(tr);
+    });
+    $("rowsEmpty").hidden = list.length > 0;
+    $("count").textContent = "Visar " + list.length + " av " + objekt.length + " objekt.";
+  }
+  function renderBrf() {
+    var list = brf.filter(function (b) { return !filters.area || b.area === filters.area; });
+    list.sort(function (a, b) { return (b.flats || 0) - (a.flats || 0); });
+    var tb = $("brfRows"); tb.textContent = "";
+    list.forEach(function (b) {
+      var tr = el("tr");
+      var n = td("wide"); if (b.url) n.appendChild(link(b.name, b.url)); else n.textContent = b.name;
+      tr.appendChild(n);
+      tr.appendChild(td("", b.area));
+      tr.appendChild(td("num", b.flats === null ? "" : fmt(b.flats), "Lägenheter:"));
+      tr.appendChild(td("num", b.reg, "Registrerad:"));
+      var l = td(""); if (b.land) l.appendChild(el("span", "pill land", b.land)); tr.appendChild(l);
+      var s = td("num", "", "Till salu:"); if (b.sale) s.appendChild(el("span", "pill sale", String(b.sale))); else s.textContent = b.sale === null ? "" : "0"; tr.appendChild(s);
+      var q = td("num", "", "Snart:"); if (b.soon) q.appendChild(el("span", "pill soon", String(b.soon))); else q.textContent = b.soon === null ? "" : "0"; tr.appendChild(q);
+      tb.appendChild(tr);
+    });
+    $("brfCount").textContent = list.length + " föreningar" + (filters.area ? " i " + filters.area : "") + ", störst först. Antal till salu visas bara för föreningar som bevakas på Booli.";
+  }
+  function render() { renderFilters(); renderObjekt(); renderBrf(); }
+
+  function route() {
+    var v = location.hash === "#foreningar" ? "foreningar" : "objekt";
+    $("viewObjekt").hidden = v !== "objekt"; $("viewForeningar").hidden = v !== "foreningar";
+    $("tabObjekt").setAttribute("aria-current", v === "objekt" ? "page" : "false");
+    $("tabForeningar").setAttribute("aria-current", v === "foreningar" ? "page" : "false");
+  }
+  window.addEventListener("hashchange", route); route();
+
+  Array.prototype.forEach.call($("fStatus").children, function (b) { b.addEventListener("click", function () { filters.status = b.getAttribute("data-v"); saveFilters(); render(); }); });
+  $("fRooms").addEventListener("change", function () { filters.rooms = +this.value; saveFilters(); render(); });
+  $("fPrice").addEventListener("input", function () { filters.price = this.value; saveFilters(); renderObjekt(); });
+  $("fSort").addEventListener("change", function () { filters.sort = this.value; saveFilters(); render(); });
+  $("fFresh").addEventListener("change", function () { filters.fresh = this.checked; saveFilters(); render(); });
+
+  renderStats(); renderChanges(); render();
+})();
+</script>
+</body>
+</html>
